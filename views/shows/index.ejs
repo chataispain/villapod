@@ -1,0 +1,10 @@
+<h2>Search Shows</h2>
+<form action="/shows" method="GET">
+    <label>Name</label>
+    <input type="text" name="name" value="<%= searchOptions.name %>">
+    <button type="submit">Search</button>
+</form>
+<br>
+<% shows.forEach(show => { %>
+    <div><%= show.name %></div>
+<% }); %>
